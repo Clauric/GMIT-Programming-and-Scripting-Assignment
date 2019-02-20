@@ -1,4 +1,4 @@
-# Python assignment Question 5:
+# Python assignment Question 5
 # Student Name: Mark Biggar
 # Student Number: G00376334
 
@@ -31,34 +31,36 @@ while True:
     else:
         break
 
-aFactor = 2
-bPrime = 1
-cResult = 1
+aFactor = 2                                                                 # Initial factor to be used
+bPrime = 1                                                                  # Sets prime check to 1 (e.g. prime)
+cResult = 1                                                                 # Result of number divided by the factor (see line 48)
 
-while aFactor >= cResult:
+while aFactor >= cResult:                                                   # While the factor being checked is greater than the result (see line 36)
     if Number == 2 or Number == 3 or Number == 5:                           # 2, 3, and 5 are the initial 3 prime numbers
-        bPrime = 1
+        bPrime = 1                                                          # Sets the prime check to 1 (e.g. prime)
         break
 
-    elif (Number % 2 == 0) or (Number % 5 == 0) or (Number % 3 == 0):
-        bPrime = 0
+    elif (Number % 2 == 0) or (Number % 5 == 0) or (Number % 3 == 0):       # If number is even, ends in 5 or 3, or dividable by 3
+        bPrime = 0                                                          # Sets the prime check to 0 (e.g. not a prime)
         break
     
     else:
-        cResult = Number / aFactor
+        cResult = Number / aFactor                                          # Calculation of cResult
 
-        if cResult == int(cResult):
-            bPrime = 0
+        if cResult == int(cResult):                                         # Checks if the result is an integer
+            bPrime = 0                                                      # Sets the prime check to 0 (e.g. not a prime)
             break
         
         else:
-            aFactor += 1    
+            aFactor += 1                                                    # Increases factor check by 1 if none of the previous conditions are met
 
-print()
-print("Inputted number is: ", Number)
+print()                                                                     # Prints a blank line
+print("Inputted number is: ", Number)                                       # Gives the inital input value
 
-if bPrime == 0:
-    print("Inputted number is:  NOT a PRIME")
+if bPrime == 0:                                                             # If the number is not prime
+    print("Inputted number is:  NOT a PRIME")                               # Prints that it is not a prime
 
-else:
-    print("Inputted number is:  PRIME")
+else:                                                                       # If the number is a prime
+    print("Inputted number is:  PRIME")                                     # Prints that the number is a prime
+    
+# End of program
