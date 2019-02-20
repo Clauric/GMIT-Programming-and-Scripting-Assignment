@@ -1,4 +1,4 @@
-# Python assignment Question 4:
+# Python assignment Question 7
 # Student Name: Mark Biggar
 # Student Number: G00376334
 
@@ -24,6 +24,7 @@
 # Iterative approach is based on the assertion that for an initial input of 'S', the value 'x' is an overestimation of the square root, while 'S/x' is an underestimation.
 # Using the average of the 2 numbers, it is possible to reduce the values of 'x' and 'S/x' so that they converge at a sngle value.
 # Programmatically this can be done by using the formula x1 = (x0 + (S/x0)) / 2 iteratively until the difference between x1 and x0 is less than a certain value
+# This method is the method that is on the board of the Non-Linear equations class in the movie 21 (starting at 13:21).
 
 # Issues:
 # This method has been know to have problems where the initial guess 'x' is too far from the actual square root of 'S'.
@@ -32,7 +33,11 @@
 # Attempt to program both methods, and show any difference between the estimated roots at 6 decimal places.
 # The math.sqrt(), while a bit of a cheat, will also be used to highlight any diferences between the 3 methods, at 6 decimal places.
 
-import math
+# Note: 
+# Using large values, especially values greater than 1 million will slow, if not crash python.
+# This is due to the fact that the incrementations are in steps of 1.
+
+import math                                                                 # Imports the python maths function into the program
 
 while True:
     try:
@@ -92,7 +97,6 @@ while aCount <=8:                                                           # Wh
 
 # Newton-Raphson method
 
-
 yNewNum = 0                                                                 # New value of estimate (x1)
 xRoot = 0                                                                   # Used to transfer values between yNewNum and zStart
 
@@ -104,10 +108,10 @@ while abs(zStart - yNewNum) > 0.0000001:                                    # Wh
 
 # Final print outs
 
-print("Start number is:         ", Number)
-print("Square roots are:")
-print("Math.SQRT() =            ", round(float(math.sqrt(Number)),6))
-print("Over/under method =      ", round(float(bStart),6))
-print("Newton-Raphson method =  ", round(float(zStart),6))
+print("Start number is:         ", Number)                                  # Print the number that was entered
+print("Square roots are:")                                                  # Prints the line "square roots are:"
+print("Math.SQRT() =            ", round(float(math.sqrt(Number)),6))       # Prints the value using the math.SQRT function
+print("Over/under method =      ", round(float(bStart),6))                  # Prints the results using over/under method
+print("Newton-Raphson method =  ", round(float(zStart),6))                  # Prints the results using Newton-Raphson method
 
 # End of program
