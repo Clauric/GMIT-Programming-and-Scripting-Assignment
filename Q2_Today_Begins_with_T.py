@@ -6,7 +6,7 @@
 
 # Approach:
 # 1)    Get today's date using the datetime.datetime function 
-# 2)    Get the name of today's date using the strftime functionality as part of datetime.datetime
+# 2)    Get the name of today's date using the strftime functionality as part of datetime.datetime, as well as the format value %A
 # 3)    Set the value of today's date to a string
 # 3)    Check the first letter of the string to determine if it begins with "T"
 # 4)    Print the results.
