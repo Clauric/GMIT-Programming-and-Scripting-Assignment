@@ -32,7 +32,7 @@ while True:
     else:
         break
 
-print("Start number is: ", Number)
+print("Start number is: ", Number)                                          # Print the starting number
         
 if Number = 1:                                                              # Special case of input value = 1
     print("Input number is 1. There are no further calculations to be done")
