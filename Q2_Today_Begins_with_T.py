@@ -14,7 +14,7 @@
 import datetime                                                 # Import the date time function
 
 Today = datetime.datetime.today()                               # Set Today string to today's name
-Today_name = Today.strftime("%A")
+Today_name = Today.strftime("%A")                               # Format the date to the full name of the day
 
 if Today_name[0] == "T":                                        # If the first character (Python starts at character 0) of the name begins with "T"
     print("Yes - today begins with a T.")                       # Print "Yes - today begins with a T."
