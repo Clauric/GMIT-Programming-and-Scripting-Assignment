@@ -21,14 +21,23 @@
 # Decision:
 # Choose Option 2, as code is shorter, more simplistic, relies on proven formulae, and faster for large values of n.
 
-Number = int(input("Please input a whole positive number  "))       # Request input value from user, and converts from string to integer
+while True:
+    try:
+        Number = int(input("Please input a whole positive number  "))       # Request input value from user, and converts from string to integer
 
-while Number < 1:                                                   # While statement to catch if inputted value is invalid (i.e. less than 1)
-    Number = int(input("Please input a WHOLE POSITIVE number  "))   # Request new value from user, and converts from string to integer
+    except ValueError:                                                      # Error/exception handling
+        print("Sorry, I did not understand that entry")                 
+        # Number = int(input("Please input a WHOLE POSITIVE number  "))     # Request new value from user, and converts from string to integer
+        continue
 
-else:                                                               # Else if number is valid
-    Sum = ((Number + 1) * Number) / 2                               # Performs calculation using formula f(n) = ((n + 1) * n) / 2
-    print("Number entered: ",Number)                                # Prints number entered by user
-    print("Sum of all digits less than and equal ", Number, " is: ", int(Sum))  # Prints result
+    if Number < 1:
+        print("Sorry, that number is not positive")
+        # Number = int(input("Please input a WHOLE POSITIVE number  "))     # Request new value from user, and converts from string to integer
+        continue
+    else:
+        Sum = ((Number + 1) * Number) / 2                                   # Performs calculation using formula f(n) = ((n + 1) * n) / 2
+        print("Number entered: ",Number)                                    # Prints number entered by user
+        print("Sum of all digits less than and equal ", Number, " is: ", int(Sum))  # Prints result
+        break
 
 # End of program
