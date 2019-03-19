@@ -1,2 +1,28 @@
 # GMIT-Programming-and-Scripting-Assignment
-Solutions for Data Analytics questions set as part of the Programming and Scripting module
+
+## Table of Contents
+
+  * [Introduction](#Introduction)
+  * [Technologies and Libraries])#Technologies and Libraries)
+  * [Setup](#Setup)
+  * [Research](#Research)
+  * [Questions Asked](#Questions Asked)
+  * [Code Examples](#Code Examples)
+  * [Status](#Status)
+  * [Other Information](#Other Information)
+  
+  ## Introduction
+  
+  ## Technologies and Libraries
+  
+  ## Setup
+  
+  ## Research
+  
+  ## Questions Asked
+  
+  ## Code Examples
+  
+  ## Status
+  
+  ## Other Information
