@@ -3,7 +3,7 @@
 ## Table of Contents
 
   * [Introduction](#Introduction)
-  * [Technologies and Libraries])#Technologies and Libraries)
+  * [Technologies and Libraries](#Technologies and Libraries)
   * [Setup](#Setup)
   * [Research](#Research)
   * [Questions Asked](#Questions Asked)
