@@ -37,6 +37,7 @@
   
   ## Research
   Two separate types of research were carried out in order to solve the problems posed. These were:
+  
     * [Problem solving research](#Problem-solving-research)
     * [Code formatting research](#Code-formatting-research)
     
