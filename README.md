@@ -85,4 +85,5 @@
   The author is a student of the Galway Mayo Institute of Technology, studying for a Higher Diploma in Science (Data Analytics). In addition, they work as a consultant in the financial services sector in Ireland, focusing on data migrations, and system replatforming for Irish and international financial institutions.
   
   ### Contact
+  The author can be contacted using Clauric@gmail.com.
   
