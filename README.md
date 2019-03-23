@@ -44,23 +44,23 @@
   ### Problem solving research
   All research with regards to problem solving was treated as a thought exercise. As such, all problems, solutions, processes, and code logic was created from the author's own mind. The exception to this was the application of logic (Q.7, lines 103 & 104) for the Newton-Raphson method, which were sourced from various sites including:
   
-  1. Joe Chasinga's Medium post from: https://medium.com/code-zen/newtons-square-root-d8be94ec641e
-  2. Netwon-Raphson Method from: http://www.sosmath.com/calculus/diff/der07/der07.html
-  
+  1. <a href="https://medium.com/code-zen/newtons-square-root-d8be94ec641e">Joe Chasinga's Medium post</a>
+  2. <a href="http://www.sosmath.com/calculus/diff/der07/der07.html">Netwon-Raphson Method</a>
+ 
   As the problems are fairly common problems, in terms of processes, and logic, there may be some overlap between the logic shown in the author's solutions, and existing information available on the web.
   
   ### Code formatting research
   This research involved identifying how to write a particular code sequence, in order to implement the solution that was implemented. The following sources were used for code research:
   
-  * W3Schools (https://www.w3schools.com/), 
-  * Official Python 3.7.2 documentation (https://docs.python.org/3.7/library/index.html)
-  * Matplotlib (https://matplotlib.org/contents.html)
-  * NumPy (https://docs.scipy.org/doc/)
+  * <a href="https://www.w3schools.com">W3Schools</a>, 
+  * <a href="https://docs.python.org/3.7/library/index.html">Official Python 3.7.2 documentation</a>
+  * <a href="https://matplotlib.org/contents.html">Matplotlib</a>
+  * <a href="https://docs.scipy.org/doc">NumPy</a>
 
  For Question 6 (the 2nd word problem), two additional sources were used as the basis of the solution. These were:
-   * user2357112's answer from StackOverflow: (https://stackoverflow.com/a/17645629/4430536)
-   * Sam Allen's Instance Search page from (https://www.dotnetperls.com/punctuation-python)
-  
+  * <a href="https://stackoverflow.com/a/17645629/4430536">user2357112's answer from StackOverflow</a>
+  * <a href="https://www.dotnetperls.com/punctuation-python">Sam Allen's Instance Search page</a>
+ 
   ## Questions Asked
   The following questions were asked, and answered, in the Python scripts in this repository:
   
