@@ -11,14 +11,14 @@
   * [Other Information](#Other-Information)
   
   ## Introduction
-  This ReadMe, and the associated scripts within this repository, were written for an assignment for a module in Programming and Scripting, as part of a Higher Diploma in Science (Data Analytics). The specific questions associated with each individual script are listed in the [Questions Asked](#Questions-Asked) section below. All scripts in this depository are named with the corresponding question at the start of their name. Specific thoughts on the approach for each solution is provided in the comments section at the start of each script. Additionally, a sample of code has been provided below, whith a walkthrough to illustrate how the codes are generally written.
+  This ReadMe, and the associated scripts within this repository, were written for an assignment for a module in Programming and Scripting, as part of a Higher Diploma in Science (Data Analytics). The specific questions associated with each individual script are listed in the [Questions Asked](#Questions-Asked) section below. All scripts in this depository are named with the corresponding question at the start of their name. Specific thoughts on the approach for each solution is provided in the comments section at the start of each script. Additionally, a sample of code has been provided below, whit a walkthrough to illustrate how the codes are generally written.
   
   ## Technologies and Libraries
   ### Main Platform
   * Python 3.7.2
     
   ### Internal Libraries
-  These libraries are native to Python and should not need to be installed in order to run the scripts. The questions that the libraries areneeded for is listed after the library name.
+  These libraries are native to Python and should not need to be installed in order to run the scripts. The questions that the libraries are needed for is listed after the library name.
   * Datetime - Q. 2, 8
   * Math - Q. 7 
   * Os - Q. 9
@@ -34,7 +34,7 @@
   
   ## Setup
   
-  In order to run the scripts in this repositroy, it is necessary to have a complier capable of compiling Python 3.7.2. In addition, it will be necessary to install the external libraries described above if there is a requirement to run Q10.
+  In order to run the scripts in this repository, it is necessary to have a complier capable of compiling Python 3.7.2. In addition, it will be necessary to install the external libraries described above if there is a requirement to run Q10.
   
   All the codes in this repository have been tested using <a href="https://cmder.net/">Cmder</a>, with the <a href="https://www.anaconda.com/">Anaconda</a> being the default Python platform.  
   
@@ -48,7 +48,7 @@
   All research with regards to problem solving was treated as a thought exercise. As such, all problems, solutions, processes, and code logic was created from the author's own mind. The exception to this was the application of logic (Q.7, lines 103 & 104) for the Newton-Raphson method, which were sourced from various sites including:
   
   1. <a href="https://medium.com/code-zen/newtons-square-root-d8be94ec641e">Joe Chasinga's Medium post</a>
-  2. <a href="http://www.sosmath.com/calculus/diff/der07/der07.html">Netwon-Raphson Method</a>
+  2. <a href="http://www.sosmath.com/calculus/diff/der07/der07.html">Newton-Raphson Method</a>
  
   As the problems are fairly common problems, in terms of processes, and logic, there may be some overlap between the logic shown in the author's solutions, and existing information available on the web.
   
@@ -79,7 +79,7 @@
   10. Write a program that displays a plot of the functions x, x2 and 2x in the range [0, 4].
   
   ## Sample of code and explanation
-  A sample code has been provided below. The exmaple is used to demonstrate how the overal code is written, as well as some approaches to the solving of the questions. All the code, where practical, has been commented, to allow the reader to understand what is happeneing in each line. Where there is no comment, the line is viewed as being self-explanatory (i.e. else, if, while) or it has been explained in the previous line.
+  A sample code has been provided below. The example is used to demonstrate how the overall code is written, as well as some approaches to the solving of the questions. All the code, where practical, has been commented, to allow the reader to understand what is happening in each line. Where there is no comment, the line is viewed as being self-explanatory (i.e. else, if, while) or it has been explained in the previous line.
   
   The sample code provided is from Q.5, which deals with identifying if a number is prime.
   ```
@@ -94,7 +94,7 @@
   while aFactor >= cResult:                                                   # While the factor being checked is greater than the result
 ```
 
-The code runs while aFactor is greater than the cResult. This is due to the <a href="https://www.khanacademy.org/math/pre-algebra/pre-algebra-arith-prop/pre-algebra-arithmetic-properties/v/commutative-law-of-multiplication">cummutative properties</a> of multiplicants. This helps reduce the number of attempts the code needs to complete.
+The code runs while aFactor is greater than the cResult. This is due to the <a href="https://www.khanacademy.org/math/pre-algebra/pre-algebra-arith-prop/pre-algebra-arithmetic-properties/v/commutative-law-of-multiplication">commutative properties</a> of multiplicands. This helps reduce the number of attempts the code needs to complete.
 
 The code calls out a number of specific cases, in order to increase the scripts speed.
 
@@ -112,7 +112,7 @@ When the code runs through the while loop to check for a prime, the first check 
           break
 ```
 
-A number is prime if its only whole number factors are 1 and itself. As such, it is possible to remove a large portion of calculations from the script if certain rules are followed. For example, any even number (except for 2) is not a prime, as it is divisible by 2. Likewise, if a number is divisible by 3 or by 5, they would also not be primes. By using the modulo function of Python, it is possible quickly eliminate any number that is divisible by 2, 3, or 5. This eliminates more than 77% of numbers from being checked by the slower iterative method of checking.
+A number is prime if its only whole number factors are 1 and itself. As such, it is possible to remove a large portion of calculations from the script if certain rules are followed. For example, any even number (except for 2) is not a prime, as it is divisible by 2. Likewise, if a number is divisible by 3 or by 5, they would also not be primes. It is possible quickly eliminate any number that is divisible by 2, 3, or 5, by using the modulo function of Python. This eliminates more than 77% of numbers from being checked by the slower iterative method of checking.
 
 ```
       else:
@@ -126,9 +126,9 @@ A number is prime if its only whole number factors are 1 and itself. As such, it
               aFactor += 1                                                    # Increases factor check by 1 if none of the previous conditions are met
  ```
  
- The final part of the code will check each possibe whole number factor (aFactor), starting at 2 and incrementing in steps of 1, until it has determined that the result of the inputted number divided by the factor (cResult) is an integer, or the factor is greater than cResult. If cResult is an integer, it will set bPrime to 0 and break out of the while loop. 
+ The final part of the code will check each possible whole number factor (aFactor), starting at 2 and incrementing in steps of 1, until it has determined that the result of the inputted number divided by the factor (cResult) is an integer, or the factor is greater than cResult. If cResult is an integer, it will set bPrime to 0 and break out of the while loop. 
  
- Each set of scripts is similarily written, with a combination of hardcoded rules, and while loops, to allow for flexibility and speed.
+ Each set of scripts is similarly written, with a combination of hardcoded rules, and while loops, to allow for flexibility and speed.
   
   ## Status
   The status of this project is complete. As there is a submission date of the 31st March, 2019, the files will be altered, from their current format, after that date. Where the last push/alter date is prior to the 31st March, 2019, that date can be viewed as the completion date.
