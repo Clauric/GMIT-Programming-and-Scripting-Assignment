@@ -55,7 +55,7 @@
   ### Code formatting research
   This research involved identifying how to write a particular code sequence, in order to implement the solution that was implemented. The following sources were used for code research:
   
-  * <a href="https://www.w3schools.com">W3Schools</a>, 
+  * <a href="https://www.w3schools.com/python/default.asp">W3Schools</a>
   * <a href="https://docs.python.org/3.7/library/index.html">Official Python 3.7.2 documentation</a>
   * <a href="https://matplotlib.org/contents.html">Matplotlib</a>
   * <a href="https://docs.scipy.org/doc">NumPy</a>
