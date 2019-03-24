@@ -52,7 +52,7 @@ while aFactor >= cResult:                                                   # Wh
             break
         
         else:
-            aFactor += 1                                                    # Increases factor check by 1 if none of the previous conditions are met
+            aFactor += 2                                                    # Increases factor check by 2 if none of the previous conditions are met
 
 print()                                                                     # Prints a blank line
 print("Inputted number is: ", Number)                                       # Gives the inital input value
