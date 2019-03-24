@@ -6,7 +6,7 @@
   * [Setup](#Setup)
   * [Research](#Research)
   * [Questions Asked](#Questions-Asked)
-  * [Code Examples](#Code-Examples)
+  * [Sample of code and explanation](#Sample-of-code-and-explanation)
   * [Status](#Status)
   * [Other Information](#Other-Information)
   
@@ -33,7 +33,9 @@
   
   ## Setup
   
+  In order to run the scripts in this repositroy, it is necessary to have a complier capable of compiling Python 3.7.2. In addition, it will be necessary to install the external libraries described above if there is a requirement to run Q10.
   
+  All the codes in this repository have been tested using <a href="https://cmder.net/">Cmder</a>, with the <a href="https://www.anaconda.com/">Anaconda</a> being the default Python platform.  
   
   ## Research
   Two separate types of research were carried out in order to solve the problems posed. These were:
@@ -75,15 +77,64 @@
   9. Write a program that reads in a text file and outputs every second line. The program should take the filename from an argument on the command line.
   10. Write a program that displays a plot of the functions x, x2 and 2x in the range [0, 4].
   
-  ## Code Examples
+  ## Sample of code and explanation
+  A sample code has been provided below. The exmaple is used to demonstrate how the overal code is written, as well as some approaches to the solving of the questions. All the code, where practical, has been commented, to allow the reader to understand what is happeneing in each line. Where there is no comment, the line is viewed as being self-explanatory (i.e. else, if, while) or it has been explained in the previous line.
+  
+  The sample code provided is from Q.5, which deals with identifying if a number is prime.
+  ```
+  aFactor = 2                                                                 # Initial factor to be used
+  bPrime = 1                                                                  # Sets prime check to 1 (e.g. prime)
+  cResult = 1                                                                 # Result of number divided by the factor
+  ```
+ 
+ In the above code, the initial factor (aFactor) to be checked is 2, as 1 is a factor of all positive and negative whole numbers. bPrime is the key that changes from 1 (prime) to 0 (not a prime) based on the calculations. bPrime is set to 1 on the assumption that all numbers are prime (bPrime could equally be set to 0 based on the fact that there are more non-prime numbers than prime numbers). cResult is the result of the inputted number divided by the factor (aFactor).
+
+```
+  while aFactor >= cResult:                                                   # While the factor being checked is greater than the result
+```
+
+The code runs while aFactor is greater than the cResult. This is due to the <a href="https://www.khanacademy.org/math/pre-algebra/pre-algebra-arith-prop/pre-algebra-arithmetic-properties/v/commutative-law-of-multiplication">cummutative properties</a> of multiplicants. This helps reduce the number of attempts the code needs to complete.
+
+The code calls out a number of specific cases, in order to increase the scripts speed.
+
+```
+      if Number == 2 or Number == 3 or Number == 5:                           # 2, 3, and 5 are the initial 3 prime numbers
+          bPrime = 1                                                          # Sets the prime check to 1 (e.g. prime)
+          break
+```
+
+When the code runs through the while loop to check for a prime, the first check will be to determine if the inputted number is 2, 3, or 5, which are the first 3 prime numbers. If this is the case, the code will break out of the while loop, and return that the inputted value is a prime.
+
+```
+      elif (Number % 2 == 0) or (Number % 5 == 0) or (Number % 3 == 0):       # If number is even, ends in 5 or 3, or dividable by 3
+          bPrime = 0                                                          # Sets the prime check to 0 (e.g. not a prime)
+          break
+```
+
+A number is prime if its only whole number factors are 1 and itself. As such, it is possible to remove a large portion of calculations from the script if certain rules are followed. For example, any even number (except for 2) is not a prime, as it is divisible by 2. Likewise, if a number is divisible by 3 or by 5, they would also not be primes. By using the modulo function of Python, it is possible quickly eliminate any number that is divisible by 2, 3, or 5. This eliminates more than 77% of numbers from being checked by the slower iterative method of checking.
+
+```
+      else:
+          cResult = Number / aFactor                                          # Calculation of cResult
+
+          if cResult == int(cResult):                                         # Checks if the result is an integer
+              bPrime = 0                                                      # Sets the prime check to 0 (e.g. not a prime)
+              break
+
+          else:
+              aFactor += 1                                                    # Increases factor check by 1 if none of the previous conditions are met
+ ```
+ 
+ The final part of the code will check each possibe whole number factor (aFactor), starting at 2 and incrementing in steps of 1, until it has determined that the result of the inputted number divided by the factor (cResult) is an integer, or the factor is greater than cResult. If cResult is an integer, it will set bPrime to 0 and break out of the while loop. 
+ 
+ Each set of scripts is similarily written, with a combination of hardcoded rules, and while loops, to allow for flexibility and speed.
   
   ## Status
-  The status of this project is complete. As these is a submission date of the 31st March, 2019, the files will be altered, from their current format, after that date. Where the last push/alter date is prior to the 31st March, 2019, that date can be viewed as the completion date.
+  The status of this project is complete. As there is a submission date of the 31st March, 2019, the files will be altered, from their current format, after that date. Where the last push/alter date is prior to the 31st March, 2019, that date can be viewed as the completion date.
   
   ## Other Information
   ### About the Author
   The author is a student of the Galway Mayo Institute of Technology, studying for a Higher Diploma in Science (Data Analytics). In addition, they work as a consultant in the financial services sector in Ireland, focusing on data migrations, and system replatforming for Irish and international financial institutions.
   
   ### Contact
-  The author can be contacted using Clauric@gmail.com.
-  
+  The author can be contacted using Clauricaune@gmail.com.
