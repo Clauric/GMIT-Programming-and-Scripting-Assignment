@@ -11,6 +11,7 @@
   * [Other Information](#Other-Information)
   
   ## Introduction
+  This ReadMe, and the associated scripts within this repository, were written for an assignment for a module in Programming and Scripting, as part of a Higher Diploma in Science (Data Analytics). The specific questions associated with each individual script are listed in the [Questions Asked](#Questions-Asked) section below. All scripts in this depository are named with the corresponding question at the start of their name. Specific thoughts on the approach for each solution is provided in the comments section at the start of each script. Additionally, a sample of code has been provided below, whith a walkthrough to illustrate how the codes are generally written.
   
   ## Technologies and Libraries
   ### Main Platform
