@@ -1,4 +1,4 @@
-# GMIT-Programming-and-Scripting-Assignment
+# Programming and Scripting Start Project
 
 ## Table of Contents
   * [Introduction](#Introduction)
